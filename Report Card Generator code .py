@@ -15,10 +15,10 @@ def input_student_data():
                 if 0<= mark <= 100:grades.append(mark) 
                 break
                 else:prnt("Mark must be between 0 and 100.")
-                except valueError:
-                    print("Please enter a valid number.")
-                    studet['grades']=dict(zip(subjects,grades))
-                    return student
+            except valueError:
+                print("Please enter a valid number.")
+    studet['grades']=dict(zip(subjects,grades))
+    return student
 
 def calculate_report(student):
     grades=list(student['grades'].values())
@@ -74,3 +74,4 @@ def main():
 
 if__name__ == "__main__":
 main()       
+
