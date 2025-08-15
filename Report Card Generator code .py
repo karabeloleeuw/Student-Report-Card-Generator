@@ -1,6 +1,4 @@
 import json
-import os
-import statistics
 from datetime import datetime
 import matplotlib.pyplot as plt
 
@@ -13,7 +11,8 @@ def clear_screen():
 
 def display_header():
     print("=" * 60)
-    print("           STUDENT REPORT CARD GENERATOR")
+    print("STUDENT REPORT CARD GENERATOR")
+    print("welcome! Let's get started.")
     print("=" * 60)
     print()
 
